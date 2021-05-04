@@ -127,11 +127,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(483, 386);
+            this.label3.Location = new System.Drawing.Point(478, 386);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 20);
+            this.label3.Size = new System.Drawing.Size(195, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Current RAM Usage";
+            this.label3.Text = "Current Available RAM ";
             // 
             // Form1
             // 

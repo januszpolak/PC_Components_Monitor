@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace PC_Components_Monitor
 {
@@ -16,6 +9,7 @@ namespace PC_Components_Monitor
 
         PerformanceCounter perform = new PerformanceCounter("Processor", "% Processor Time", "_Total");
         PerformanceCounter mem = new PerformanceCounter("Memory", "Available MBytes");
+        
 
 
 
@@ -39,6 +33,7 @@ namespace PC_Components_Monitor
 
             float ram = mem.NextValue();
             int ramValue = (int)ram;
+            circularProgressBar2.Value = (ramValue * 100) / 8192;
             circularProgressBar2.Text = ram.ToString() + "MB";
         }
     }

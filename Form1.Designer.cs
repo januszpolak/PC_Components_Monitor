@@ -204,6 +204,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.circularProgressBar2);
             this.Controls.Add(this.circularProgressBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Current Processor Usage";
             this.ResumeLayout(false);

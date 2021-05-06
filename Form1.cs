@@ -35,6 +35,11 @@ namespace PC_Components_Monitor
             int ramValue = (int)ram;
             circularProgressBar2.Value = (ramValue * 100) / 8192;
             circularProgressBar2.Text = ram.ToString() + "MB";
+
+            float ramUsage = 8192 - (mem.NextValue());
+            int ramValueUsage = (int)ramUsage;
+            circularProgressBar3.Value = (ramValueUsage * 100) / 8192;
+            circularProgressBar3.Text = ramUsage.ToString() + "MB";
         }
     }
 }
